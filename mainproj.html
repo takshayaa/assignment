@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Blogging</title>
+    <style>
+        a{
+            font-weight: bolder;
+            font-size: large;
+            font-family:Geneva;
+        }
+        p{
+            font-family: Georgia;
+            font-size: large;
+            font-weight: bold;
+        }
+        h1{
+            font-family: Georgia;
+            font-weight: bolder;
+        }
+    </style>
+    
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <ul class="navbar-nav">
+          <li class="nav-item ">
+            <a class="nav-link active" href="#">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="postblog.html">POST ARTICLE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="contact.html">CONTACT US</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="container p-3  ">
+        <h1>All About Blogging</h1>
+        <p> Blogging is a collection of skills that one needs to run and supervise a blog. 
+            This entails equipping a web page with tools to make the process of writing,
+             posting, linking, and sharing content easier on the internet.
+             It’s important to mention that the popularity of blogging grows with each 
+             passing day! To answer the question ‘what is blogging’, we need to look at
+              the factors behind its rise. In the early stages, blogs became mainstream, as news services began using them as tools
+            for outreach and opinion forming. They became a new source of information.When you are passionate about something, you want to share it with the world. Whether it’s a passion 
+            for fishing, photography, or marketing, blogging is an excellent way to share that passion. When you 
+            blog about something you are passionate about, 
+            it opens the door to connecting with those around the world who speak your language 
+            and have the same passions</p>
+      </div>
+      <div id="main">
+       
+      </div>
+      <footer class="page-footer font-small teal pt-4">
+        <p> © 2021 Copyright: Akshayaa</p>
+      </footer>
+      
+      <script>
+        let blogs = [{title:"HTML",description: "HTML is a markup language through which we can design a website",author:"Ravi"},
+                 { title: "CSS",description: "Using CSS we can style all the elements for our website and add more colors and effects to it",author:"Karthick"}];
+        if (localStorage.getItem("blogs") === null) {
+            localStorage.setItem("blogs", JSON.stringify(blogs))
+        }
+        else {
+            blogs = JSON.parse(localStorage.getItem("blogs"))
+        }
+        
+        const container = document.getElementById("main");  
+    
+
+        let new_blog;
+        blogs.forEach(i => {
+            new_blog = `<div class='text-center bg-info'><h1>${i.title}</h1><p> ${i.description}</p><p> ${i.author}</p></div>`
+            container.innerHTML += new_blog;
+            console.log(new_blog);
+        }); 
+    
+
+      </script>
+      <script src="./postscript.js"></script>
+</body>
+</html>

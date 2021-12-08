@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Blogging</title>
+    <style>
+        a{
+            font-weight: bolder;
+            font-size: large;
+            font-family:Geneva;
+        }
+        p{
+            font-family: Georgia;
+            font-size: large;
+            font-weight: bold;
+        }
+        h1{
+            font-family: Georgia;
+            font-weight: bolder;
+        }
+        h2{
+          font-family: Geneva;
+          text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <ul class="navbar-nav">
+          <li class="nav-item ">
+            <a class="nav-link active" href="./mainproj.html">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">POST ARTICLE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="contact.html">CONTACT US</a>
+          </li>
+        </ul>
+      </nav>
+     
+      <div class="container">
+        <h2 >POST YOURS AND MAKE A CHANGE</h2>
+        <form method="post">
+          <div class="form-group">
+            <label for="name">Title :</label>
+            <input type="text" id="title" class="form-control"  placeholder="Enter Title of your article" >
+          </div>
+          <div class="form-group">
+            <label for="mainarticle">Description:</label>
+            <textarea class="form-control" id="description" rows="5" name="text" placeholder="Enter the description of your article"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="author">Author :</label>
+            <input type="text" class="form-control" id="author" placeholder="Enter Author of your article" >
+          </div>
+          <button type="reset" onclick="storeitem()" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      <script src="./postscript.js"></script>
+</body>
+</html>

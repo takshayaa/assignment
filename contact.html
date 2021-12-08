@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Blogging</title>
+    <style>
+        a{
+            font-weight: bolder;
+            font-size: large;
+            font-family:Geneva;
+        }
+        p{
+            font-weight: bolder;
+            font-size:medium;
+            font-family:Geneva;
+        }
+        h3,h4{
+             font-family:Geneva;
+        }
+        div{
+            background-color:#17a2b8;
+        }
+        form{
+            text-align: center;
+            margin:auto;
+            font-family:Geneva;
+        }
+        input,textarea{
+            text-align: center;
+        }
+    </style>
+    
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <ul class="navbar-nav">
+          <li class="nav-item ">
+            <a class="nav-link active" href="mainproj.html">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="postblog.html">POST ARTICLE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">CONTACT US</a>
+          </li>
+        </ul>
+      </nav>
+      <section class="mb-4">
+        <br>
+        <h3 class="text-center w-responsive mx-auto mb-5">Feel free to Contact us for all your queries.</h3>
+        <h4 class="text-center w-responsive mx-auto mb-5">No.32 Tank st<br> Bangalore-560004 <br>Ph-9000100000.</h4>
+        
+        <div class="row text-md-middle justify-content-center" id="divpos">
+            <div class="col-md-9 mb-md-0 mb-5">
+                <form id="contact-form" name="contact-form">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                                <label for="name" class="">Name</label>
+                                <input type="text" id="name" name="name" class="form-control" placeholder="enter your name">
+                            </div>
+                        </div>
+    <br>
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                                <label for="email" class="">Email</label>
+                                <input type="text" id="email" name="email" class="form-control" placeholder="enter your email">
+                            </div>
+                        </div>
+                    </div>
+                   
+    <br>
+                  
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="md-form mb-0">
+                                <label for="subject" class="">Subject</label>
+                                <input type="text" id="subject" name="subject" class="form-control" placeholder="enter your Subject">
+                            </div>
+                        </div>
+                    </div>
+                   
+    <br>
+                   
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="md-form ">
+                                <label for="message">Message</label>
+                                <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea" placeholder="enter your message"></textarea>
+                            </div>
+    
+                        </div>
+                    </div>
+                </form>
+    <br>
+                <div class="text-center text-md-middle">
+                    <a class="btn btn-primary">Send</a>
+                    <br>
+                </div>
+                
+            </div>
+    
+        </div>
+    
+    </section>
+</body>
+</html>
