@@ -12,7 +12,7 @@ function add(x,y){
     console.log("Addition is ",x+y);
 }
 function sub(x,y){
-    console.log("Substraction is",x-y);
+    console.log("Subtraction is",x-y);
 }
 function mul(x,y){
     console.log("Multiplication is",x*y);
@@ -29,6 +29,6 @@ try {
     divide(a,b); 
 } catch (err) {
     fs.writeFileSync('error.txt',err.toString());
-     console.log("Error ocerd:"+err);
+     console.log("Error occured:"+err);
 
 }
